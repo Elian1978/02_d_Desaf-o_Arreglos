@@ -1,18 +1,18 @@
 def compara_arrays(visits, visits_1)    
-    acc = 0
-    acc_1 = 1
+    contador = 0
+    contador2 = 1
     lenght = visits.count
     lenght_1 = visits_1.count
     visits.each do |visit|
-        acc += visit/lenght.to_f
+        contador += visit/lenght.to_f
     end
     visits_1.each do |visit|
-        acc_1 += visit/lenght_1.to_f
+        contador2 += visit/lenght_1.to_f
     end
-    if acc > acc_1
-        print acc
+    if contador > contador2
+        print contador1
     else
-        print acc_1
+        print contador2
     end
 end
 
